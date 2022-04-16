@@ -4,3 +4,4 @@ Problem with this project to improve:
   + No respondsive due to no preparation before doing css
   + No comments
   + Still got a bit problem with git
+Graphic inspired by nicepage.com

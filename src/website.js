@@ -1,7 +1,7 @@
 import loadHome from "./home";
 import loadMenu from "./menu";
 import loadContact from "./contact";
-import createParagraph from "./home";
+import createParagraph from "./create";
 
 function createHeader() {
   const header = document.createElement("header");
@@ -18,6 +18,7 @@ function createHeader() {
 
 function createNav() {
   const nav = document.createElement("nav");
+  nav.classList.add("nav-bar");
 
   const homeBtn = createParagraph("Home", "button");
   homeBtn.classList.add("button-nav");
@@ -28,16 +29,16 @@ function createNav() {
   });
 
   const menuBtn = createParagraph("Menu", "button");
-  homeBtn.classList.add("button-nav");
-  homeBtn.addEventListener("click", (e) => {
+  menuBtn.classList.add("button-nav");
+  menuBtn.addEventListener("click", (e) => {
     if (e.target.classList.contains("active")) return;
     setActiveBtn(menuBtn);
     loadMenu();
   });
 
   const contactBtn = createParagraph("Contact", "button");
-  homeBtn.classList.add("button-nav");
-  homeBtn.addEventListener("click", (e) => {
+  contactBtn.classList.add("button-nav");
+  contactBtn.addEventListener("click", (e) => {
     if (e.target.classList.contains("active")) return;
     setActiveBtn(contactBtn);
     loadContact();
@@ -96,7 +97,7 @@ function initializeWebsite() {
   content.appendChild(createMain());
   content.appendChild(createFooter());
 
-  setActiveButton(document.querySelector(".button-nav"));
+  setActiveBtn(document.querySelector(".button-nav"));
   loadHome();
 }
 

@@ -1,10 +1,11 @@
-import createParagragh from "./home";
+import createParagragh from "./create";
 
 function createMenu() {
   const menu_section = document.createElement("div");
   const menu = document.createElement("div");
   menu_section.classList.add("menu-section");
   menu.classList.add("menu");
+  menu_section.appendChild(menu);
 
   menu.appendChild(
     createMenuItems(
@@ -46,7 +47,7 @@ function createMenuItems(name, price, description) {
   menuItems.classList.add("menu-items");
 
   const foodImg = document.createElement("img");
-  foodImg.src = `./dist/img/${name.toLowerCase()}.jpg`;
+  foodImg.src = `img/${name.toLowerCase()}.jpg`;
   foodImg.classList.add("menu-img");
   foodImg.alt(name);
 

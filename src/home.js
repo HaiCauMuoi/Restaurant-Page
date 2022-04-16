@@ -1,3 +1,5 @@
+import createParagraph from "./create";
+
 function createHome() {
   //Creating the main components
   const home_section = document.createElement("div");
@@ -38,6 +40,7 @@ function createHome() {
   const img_1 = document.createElement("img");
   img_1.src = "../dist/img/small-img.jpg";
   img_1.alt = "Baking";
+  img_1.classList.add("img-1");
 
   const p_img_2 = createParagraph(
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minusdicta maxime eius placeat sit eligendi. Harum similique modi alias possimus obcaecati maxime molestiae sunt, nostrum,dolorem, voluptatibus reprehenderit vero esse!",
@@ -47,13 +50,8 @@ function createHome() {
 
   card_2.appendChild(img_1);
   card_2.appendChild(p_img_2);
-}
 
-//Create paragraph based on type
-function createParagraph(text, type) {
-  const paragraph = document.createElement(type);
-  paragraph.textContent = text;
-  return paragraph;
+  return home_section;
 }
 
 function loadHome() {
@@ -62,4 +60,4 @@ function loadHome() {
   main.appendChild(createHome());
 }
 
-export default { loadHome, createParagraph };
+export default loadHome;

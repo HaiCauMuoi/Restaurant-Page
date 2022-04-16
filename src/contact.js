@@ -1,4 +1,4 @@
-import createParagraph from "./home";
+import createParagraph from "./create";
 
 function createContact() {
   const contact_section = document.createElement("div");
@@ -16,7 +16,7 @@ function createContact() {
   place.classList.add("contact-p-box");
 
   const restaurantLocation = document.createElement("img");
-  restaurantLocation.src = "images/location.jpg";
+  restaurantLocation.src = "img/location.jpg";
   restaurantLocation.alt = "Location";
   restaurantLocation.classList.add("contact-img");
 

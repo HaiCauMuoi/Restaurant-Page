@@ -80,7 +80,7 @@ function createFooter() {
   githubLink.href = "https://github.com/HaiCauMuoi";
 
   const githubIcon = document.createElement("i");
-  githubIcon.classList.add("fab");
+  githubIcon.classList.add("fa");
   githubIcon.classList.add("fa-github");
 
   githubLink.appendChild(githubIcon);

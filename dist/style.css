@@ -64,15 +64,12 @@ body {
   background-size: cover;
 }
 
-.hidden {
-  display: none;
-}
-
 .home {
   display: flex;
   width: 800px;
   height: inherit;
   margin-left: 35rem;
+  animation: fadeIn 1.5s;
 }
 
 .card-1 {
@@ -172,6 +169,7 @@ body {
   margin: auto;
   background-color: rgba(0, 0, 0, 0.2);
   padding-top: 8rem;
+  animation: fadeIn 1.5s;
 }
 
 .menu-items {
@@ -230,6 +228,7 @@ body {
   margin: auto;
   color: #fff;
   display: block;
+  animation: fadeIn 1.5s;
 }
 
 .form {
@@ -255,10 +254,30 @@ body {
   margin-bottom: 20px;
 }
 
+a {
+  text-decoration: none;
+  color: #eee;
+}
+
 .fa-github {
-  font-size: 2rem;
+  font-size: 32px;
+  margin-left: 15px;
+}
+
+.fa-github:visited {
+  color: #fff;
 }
 
 .fa-github:hover {
-  color: #000;
+  color: #aaa;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

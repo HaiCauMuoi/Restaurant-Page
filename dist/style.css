@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Ms+Madi&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+}
+
+.name {
+  font-family: "Ms Madi", cursive;
+  color: white;
+  font-size: 70px;
+  opacity: 0.95;
+}
+
+.nav-bar {
+  width: 400px;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.button-nav {
+  border: none;
+  background-color: transparent;
+  color: white;
+  opacity: 0.95;
+  width: 80px;
+  height: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.active {
+  border-bottom: 1px solid #fff;
+}
+
+.button-nav:hover {
+  transform: translateY(-5px);
+}
+
+.main {
+  width: 100%;
+  height: 900px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url(img/big.jpg);
+  background-size: cover;
+}
+
+.hidden {
+  display: none;
+}
+
+.home {
+  display: flex;
+  width: 800px;
+  height: inherit;
+  margin-left: 35rem;
+}
+
+.card-1 {
+  width: 375px;
+  height: 500px;
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  margin-right: 20px;
+  margin-top: 18rem;
+}
+
+.h1-img {
+  margin-bottom: 25px;
+  margin-left: 40px;
+  font-weight: 400;
+}
+
+.p-img-1 {
+  line-height: 2.2rem;
+  margin: 0 30px;
+}
+
+.btn-white {
+  margin-top: 20px;
+  width: 150px;
+  height: 50px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  background-color: transparent;
+  border: 2px solid black;
+  color: black;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 30px;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.btn-white:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.card-2 {
+  width: 400px;
+  height: 500px;
+  margin-top: 8rem;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.img-1 {
+  width: 350px;
+  height: 400px;
+  object-fit: cover;
+  border: 8px solid rgba(241, 114, 14, 1);
+  margin-left: 1rem;
+}
+
+.p-img-2 {
+  font-family: "Montserrat", sans-serif;
+  line-height: 2rem;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+.footer {
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.svg {
+  margin-left: 15px;
+  width: 30px;
+  height: auto;
+  fill: #fff;
+}
+
+.menu {
+  width: 1000px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4rem;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-top: 8rem;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 300px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s;
+}
+
+.menu-items:hover {
+  transform: translateY(-5px);
+}
+.menu-img {
+  width: 180px;
+  height: 180px;
+  margin-left: 20px;
+  filter: brightness(80%);
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+  height: 180px;
+}
+
+.item-name {
+  margin-top: 10px;
+}
+
+.item-btn {
+  width: 100px;
+  height: 25px;
+  margin-top: 10px;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid #000;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.item-btn:hover {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+
+.contact {
+  width: 550px;
+  height: 600px;
+  margin: auto;
+  color: #fff;
+  display: block;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 12rem;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact-p-box {
+  width: 450px;
+  font-size: 1.4rem;
+  margin-left: -1rem;
+  margin-bottom: 20px;
+}
+
+.contact-img {
+  width: 500px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.fa-github {
+  font-size: 2rem;
+}
+
+.fa-github:hover {
+  color: #000;
+}
